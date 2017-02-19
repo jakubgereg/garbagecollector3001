@@ -19,11 +19,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4371408451117608}
-  - component: {fileID: 114394923553763044}
   - component: {fileID: 114517852342314628}
+  - component: {fileID: 114324801313954918}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114394923553763044
+--- !u!114 &114324801313954918
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -49,9 +49,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1270669662519924}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24df036c718329244847c45ede75f25a, type: 3}
+  m_Script: {fileID: 11500000, guid: a1287c5ad11cc40409046572e7406a80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ResourcesPerClick: 2
+  ResourcesDecreaseSpeed: 6
+  MaxResourcesAmount: 30
 --- !u!114 &114517852342314628
 MonoBehaviour:
   m_ObjectHideFlags: 1

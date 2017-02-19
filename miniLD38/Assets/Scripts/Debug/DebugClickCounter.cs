@@ -6,10 +6,8 @@ using UnityEngine.UI;
 public class DebugClickCounter : MonoBehaviour {
 
     Text clickCount;
-    ClickController click;
 
     void Start () {
-        click = GameObject.FindGameObjectWithTag("GameController").GetComponent<ClickController>();
         clickCount = GetComponent<Text>();
 	}
 	

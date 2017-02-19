@@ -11,13 +11,6 @@ public class ClickController : MonoBehaviour {
         clickCount = 0;
     }
 
-	void Start () {
-        print(clickCount);
-	}
-
-	void Update () {
-	}
-
     public void ButtonClick()
     {
         clickCount++;
