@@ -199,7 +199,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114324801313954918, guid: e4217bc31548c44428b2f29202ab83f7,
+          type: 2}
         m_MethodName: AddResources
         m_Mode: 1
         m_Arguments:
