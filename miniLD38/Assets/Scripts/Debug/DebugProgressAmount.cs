@@ -12,6 +12,6 @@ public class DebugProgressAmount : MonoBehaviour {
 	}
 	
 	void Update () {
-        progressText.text = ClickProgressManager.actualResourcesAmount.ToString("0.0");
+        progressText.text = ClickProgressManager.ActualResourcesAmount.ToString("0.0");
 	}
 }
