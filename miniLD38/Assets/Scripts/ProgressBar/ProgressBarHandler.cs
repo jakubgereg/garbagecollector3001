@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class ProgressBarHandler : MonoBehaviour {
 
-	// Use this for initialization
+    ClickProgressManager progressManager;
+
+    Vector3 startScale;
+
 	void Start () {
-		
+        startScale = transform.localScale;
+        progressManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<ClickProgressManager>();	
 	}
 	
-	// Update is called once per frame
 	void Update () {
-		
-	}
+        transform.localScale = new Vector3(startScale.x,getActualYScale());
+        
+    }
+
+    float getActualYScale()
+    {
+        return startScale.y * (progressManager.GetPercentageAmount()/100);
+    }
 }

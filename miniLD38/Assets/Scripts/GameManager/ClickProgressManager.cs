@@ -10,26 +10,39 @@ public class ClickProgressManager : MonoBehaviour {
     public float MaxResourcesAmount;
     #endregion
 
-    public static float actualResourcesAmount;
+    public static float ActualResourcesAmount;
 
     void Start () {
-        actualResourcesAmount = 0;
+        ActualResourcesAmount = 0;
 	}
 	
 	void Update () {
-        if(actualResourcesAmount > 0)
-        {
-            actualResourcesAmount -= ResourcesDecreaseSpeed * Time.deltaTime;
-        }
-        if(actualResourcesAmount > MaxResourcesAmount)
-        {
-            actualResourcesAmount = MaxResourcesAmount;
-        }
+        clampResources();
 
+        if(ActualResourcesAmount > 0)
+        {
+            ActualResourcesAmount -= ResourcesDecreaseSpeed * Time.deltaTime;
+        }
+        
 	}
 
-    public void AddProgress()
+    public void AddResources()
     {
-        actualResourcesAmount += ResourcesPerClick;
+        ActualResourcesAmount += ResourcesPerClick;
+    }
+
+    public float GetPercentageAmount()
+    {
+        return (100 / MaxResourcesAmount) * ActualResourcesAmount;
+    }
+
+    void clampResources()
+    {
+        if (ActualResourcesAmount > MaxResourcesAmount)
+        {
+            ActualResourcesAmount = MaxResourcesAmount;
+        }
+        if (ActualResourcesAmount < 0)
+            ActualResourcesAmount = 0;
     }
 }
