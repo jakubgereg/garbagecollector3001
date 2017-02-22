@@ -55,6 +55,7 @@ MonoBehaviour:
   ResourcesPerClick: 2
   ResourcesDecreaseSpeed: 6
   MaxResourcesAmount: 30
+  GameOverText: {fileID: 0}
 --- !u!114 &114517852342314628
 MonoBehaviour:
   m_ObjectHideFlags: 1
