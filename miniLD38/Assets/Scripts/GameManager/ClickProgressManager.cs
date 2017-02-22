@@ -10,6 +10,8 @@ public class ClickProgressManager : MonoBehaviour {
     public float MaxResourcesAmount;
     #endregion
 
+    public GameObject GameOverText;
+
     public static float ActualResourcesAmount;
 
     void Start () {
@@ -23,7 +25,10 @@ public class ClickProgressManager : MonoBehaviour {
         {
             ActualResourcesAmount -= ResourcesDecreaseSpeed * Time.deltaTime;
         }
-        
+        if(ClickController.GameStarted && ActualResourcesAmount <= 0)
+        {
+            GameOverText.SetActive(true);
+        }
 	}
 
     public void AddResources()
@@ -45,4 +50,6 @@ public class ClickProgressManager : MonoBehaviour {
         if (ActualResourcesAmount < 0)
             ActualResourcesAmount = 0;
     }
+
+
 }
