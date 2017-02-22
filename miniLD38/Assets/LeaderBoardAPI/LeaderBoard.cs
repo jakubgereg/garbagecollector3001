@@ -16,7 +16,7 @@ using UnityEngine;
 /// </summary>
 public static class LeaderBoard
 {
-    private static string _apikey = "YourApiKey";
+    private static string _apikey = null;
     private const string GetUrl = "https://dollarone.games/elympics/getHighscores";
     private const string SubmitUrl = "https://dollarone.games/elympics/submitHighscore";
 
@@ -25,8 +25,12 @@ public static class LeaderBoard
         _apikey = apiKey;
     }
 
-    public static IEnumerator GetLeaderBoard(Action<PlayerScoreObject[]> callbackOnSuccess)
+    public static IEnumerator GetLeaderBoard(Action<PlayerScoreObject[], string> callbackOnSuccess)
     {
+        if (_apikey == null)
+        {
+            callbackOnSuccess(null, "API KEY NOT SET!");
+        }
         WWWForm form = new WWWForm();
         form.AddField("key", _apikey);
         byte[] rawData = form.data;
@@ -35,14 +39,18 @@ public static class LeaderBoard
         yield return result;
 
         var po = JsonHelper.getJsonArray(result.text);
-        callbackOnSuccess(po);
+        callbackOnSuccess(po, "ok");
     }
 
-    public static IEnumerator SetScore(string name, int score, Action callbackOnSuccess)
+    public static IEnumerator SetScore(string name, int score, Action<string> callbackOnSuccess = null)
     {
+        if (_apikey == null)
+        {
+            if (callbackOnSuccess != null) callbackOnSuccess("API KEY NOT SET!");
+        }
         //get rid of spaces and dollar characters (not idea why i hate dollars xD)
         var pattern = new Regex("\\s\\$");
-        pattern.Replace(name, string.Empty);
+        name = pattern.Replace(name, string.Empty);
         var form = new WWWForm();
         form.AddField("key", _apikey);
         form.AddField("name", name);
@@ -50,7 +58,8 @@ public static class LeaderBoard
 
         var result = new WWW(SubmitUrl, form);
         yield return result;
-        callbackOnSuccess();
+        if (callbackOnSuccess != null)
+            callbackOnSuccess("ok");
     }
 
     [Serializable]
