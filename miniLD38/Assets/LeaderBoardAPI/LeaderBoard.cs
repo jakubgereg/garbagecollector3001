@@ -66,6 +66,8 @@ public static class LeaderBoard
     {
         public static PlayerScoreObject[] getJsonArray(string json)
         {
+            if (json == null || json == "{}")
+                return null;
             string newJson = "{ \"array\": " + json + "}";
             Wrapper<PlayerScoreObject> wrapper = JsonUtility.FromJson<Wrapper<PlayerScoreObject>>(newJson);
             return wrapper.array;
