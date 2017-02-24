@@ -2,17 +2,10 @@
 
 public class dasda : MonoBehaviour
 {
-
-    // Use this for initialization
+    Vector3 direction;
     void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        direction = Vector3.right;
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -26,13 +19,20 @@ public class dasda : MonoBehaviour
         var rigid = gm.GetComponent<Rigidbody2D>();
         if (gm.tag == "part")
         {
-            rigid.velocity = Vector2.right * 5;
+            rigid.velocity = direction * 5;
         }
     }
     void OnCollisionStay2D(Collision2D col)
     {
         MoveBelt(col);
-
-
     }
+
+    public void changeDirection()
+    {
+        if (direction == Vector3.right)
+            direction = Vector3.left;
+        else
+            direction = Vector3.right;
+    }
+
 }
