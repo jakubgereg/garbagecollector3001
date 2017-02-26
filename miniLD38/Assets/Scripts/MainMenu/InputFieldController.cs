@@ -16,6 +16,7 @@ public class InputFieldController : MonoBehaviour {
         {
             b.interactable = false;
         }
+        input.text = "";
 	}
 
     void Update() {
