@@ -2,9 +2,8 @@
 
 public class SpawnerController : MonoBehaviour
 {
-
+    public float SpawnSpeed = 0.9f;
     public GameObject[] ObjectToSpawn;
-    public Color Colors;
 
     private Bounds spawnRange;
     // Use this for initialization
@@ -18,12 +17,13 @@ public class SpawnerController : MonoBehaviour
         //if (Colors.Length <= 0)
         //    Debug.LogError("You have to set colorset!");
 
-        InvokeRepeating("Spawn", 1f, 1f);
+        InvokeRepeating("Spawn", 1f, SpawnSpeed);
     }
 
     // Update is called once per frame
     void Update()
     {
+
         //SetRandomSetting(ObjectToSpawn);
     }
 
