@@ -3,7 +3,7 @@
 public class SpawnerController : MonoBehaviour
 {
 
-    public GameObject ObjectToSpawn;
+    public GameObject[] ObjectToSpawn;
     public Color Colors;
 
     private Bounds spawnRange;
@@ -36,8 +36,10 @@ public class SpawnerController : MonoBehaviour
 
         var rotation = (float)Random.Range(0, 360);
 
+        var rand = Random.Range(0, ObjectToSpawn.Length);
         //SetRandomSetting(ObjectToSpawn);
-        Instantiate(ObjectToSpawn, newpos, Quaternion.Euler(0, 0, rotation));
+        var go = (GameObject)Instantiate(ObjectToSpawn[rand], newpos, Quaternion.Euler(0, 0, rotation));
+
     }
 
 }
