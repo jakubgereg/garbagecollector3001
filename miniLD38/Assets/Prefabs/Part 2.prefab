@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc7c7ae9aeb361489dafff84d5e232e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaximumDistance: 10
+  MaximumDistance: 30
   ActualDistance: 0
 --- !u!212 &212880128880291940
 SpriteRenderer:
@@ -122,6 +122,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f33bc6c1fca16914bb0e23d0788e6c00, type: 3}
-  m_Color: {r: 0.94482756, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.7411765, g: 0.4509804, b: 0.4509804, a: 1}
   m_FlipX: 0
   m_FlipY: 0

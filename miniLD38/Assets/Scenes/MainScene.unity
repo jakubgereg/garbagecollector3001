@@ -193,6 +193,47 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 992721183}
+    - target: {fileID: 114090377349721362, guid: e36678172e1a3944ba7f220fad9106b6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f33bc6c1fca16914bb0e23d0788e6c00,
+        type: 3}
+    - target: {fileID: 114090377349721362, guid: e36678172e1a3944ba7f220fad9106b6,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114090377349721362, guid: e36678172e1a3944ba7f220fad9106b6,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.3372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 114090377349721362, guid: e36678172e1a3944ba7f220fad9106b6,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.5137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 114090377349721362, guid: e36678172e1a3944ba7f220fad9106b6,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.5137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 114298294026511960, guid: e36678172e1a3944ba7f220fad9106b6,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114298294026511960, guid: e36678172e1a3944ba7f220fad9106b6,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114298294026511960, guid: e36678172e1a3944ba7f220fad9106b6,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e36678172e1a3944ba7f220fad9106b6, type: 2}
   m_IsPrefabParent: 0
@@ -245,7 +286,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.13333334, g: 0.4, b: 0.4, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -333,6 +374,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 212429778739743966, guid: 4417731d4b260894981a76d1bf612058,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212429778739743966, guid: 4417731d4b260894981a76d1bf612058,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.26666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 212429778739743966, guid: 4417731d4b260894981a76d1bf612058,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.26666668
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4417731d4b260894981a76d1bf612058, type: 2}
   m_IsPrefabParent: 0
@@ -343,6 +399,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114777756905165316, guid: 6efc3b09010046c41a729bdeaaa535dc,
+        type: 2}
+      propertyPath: ObjectToSpawn.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4931304212199404, guid: 6efc3b09010046c41a729bdeaaa535dc, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -375,6 +436,23 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114777756905165316, guid: 6efc3b09010046c41a729bdeaaa535dc,
+        type: 2}
+      propertyPath: ObjectToSpawn
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114777756905165316, guid: 6efc3b09010046c41a729bdeaaa535dc,
+        type: 2}
+      propertyPath: ObjectToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 1455169710128402, guid: 599e000ba6fb8c645b34324e6c241dfb,
+        type: 2}
+    - target: {fileID: 114777756905165316, guid: 6efc3b09010046c41a729bdeaaa535dc,
+        type: 2}
+      propertyPath: ObjectToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 1298612456557018, guid: 745538d68f756a849859fe8d77461eb3,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6efc3b09010046c41a729bdeaaa535dc, type: 2}
   m_IsPrefabParent: 0
