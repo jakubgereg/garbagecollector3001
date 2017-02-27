@@ -40,11 +40,4 @@ public class SpawnerController : MonoBehaviour
         Instantiate(ObjectToSpawn, newpos, Quaternion.Euler(0, 0, rotation));
     }
 
-    void SetRandomSetting(PartSettings ps)
-    {
-        //var r = Random.Range(0, Colors.Length - 1);
-        ps.GetComponent<SpriteRenderer>().color = Colors;
-
-    }
 }
-    ;
