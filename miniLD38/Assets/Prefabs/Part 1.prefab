@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50400253065355504}
   - component: {fileID: 61930168624947712}
   - component: {fileID: 114797734951574294}
+  - component: {fileID: 114994899124245492}
   m_Layer: 0
   m_Name: Part 1
   m_TagString: part
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1455169710128402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.4952221, y: 1.5184801, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -90,6 +91,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaximumDistance: 30
   ActualDistance: 0
+--- !u!114 &114994899124245492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455169710128402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05bf30487e3c4bb488af01df03b9f9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
 --- !u!212 &212097979740673748
 SpriteRenderer:
   m_ObjectHideFlags: 1
