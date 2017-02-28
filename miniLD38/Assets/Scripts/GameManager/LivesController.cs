@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LivesController : MonoBehaviour {
 
     public int numberOfLives;
+
+    public string gameOverSceneName;
 
 	void Start () {
 		
 	}
 	
 	void Update () {
-        print(numberOfLives);
         if(numberOfLives <=0)
         {
             callGameOver();
@@ -25,6 +27,8 @@ public class LivesController : MonoBehaviour {
 
     void callGameOver()
     {
-        print("game over");
+        ScoreController sc = GetComponent<ScoreController>();
+        DataContainer.score = sc.ActualScore;
+        SceneManager.LoadScene(gameOverSceneName);
     }
 }

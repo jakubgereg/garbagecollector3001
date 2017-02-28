@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 58a532915d04dc44b81c6edea1082fa4
+timeCreated: 1488274314
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Mechanization
+  fontNames:
+  - Mechanization
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1436d2e7e5724e24aaba0aa8c97669a4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
