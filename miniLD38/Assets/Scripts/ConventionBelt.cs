@@ -7,7 +7,7 @@ public class ConventionBelt : MonoBehaviour
     [HideInInspector]
     public Vector3 MovingDirection;
 
-    public int BeltSpeed = 5;
+    public float BeltSpeed = 5;
     void Start()
     {
         MovingDirection = Vector3.right;
