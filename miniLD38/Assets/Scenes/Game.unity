@@ -630,7 +630,6 @@ GameObject:
   - component: {fileID: 910233228}
   - component: {fileID: 910233231}
   - component: {fileID: 910233230}
-  - component: {fileID: 910233229}
   m_Layer: 5
   m_Name: EscInstructions
   m_TagString: Untagged
@@ -656,18 +655,6 @@ RectTransform:
   m_AnchoredPosition: {x: 275.29993, y: 196.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &910233229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 910233227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0a7d674f2c1efd408bfdc016ae83200, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  livesController: {fileID: 1836956451}
 --- !u!114 &910233230
 MonoBehaviour:
   m_ObjectHideFlags: 0
