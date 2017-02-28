@@ -41,7 +41,8 @@ public class ScoreBoardController : MonoBehaviour
         }
 
         string result = string.Empty;
-        result += HeaderLabel + "\n\n";
+        if (HeaderLabel != string.Empty)
+            result += HeaderLabel + "\n\n";
         int i = 1;
 
 

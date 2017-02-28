@@ -589,58 +589,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ed5d9d50dd112c418d0b3fe3fec0ea3, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1118600296
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4943450518649194, guid: ce140f35757ba6242a9579acafe9bf88, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 4943450518649194, guid: ce140f35757ba6242a9579acafe9bf88, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 3.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 4943450518649194, guid: ce140f35757ba6242a9579acafe9bf88, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4943450518649194, guid: ce140f35757ba6242a9579acafe9bf88, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4943450518649194, guid: ce140f35757ba6242a9579acafe9bf88, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4943450518649194, guid: ce140f35757ba6242a9579acafe9bf88, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4943450518649194, guid: ce140f35757ba6242a9579acafe9bf88, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4943450518649194, guid: ce140f35757ba6242a9579acafe9bf88, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114412281851040704, guid: ce140f35757ba6242a9579acafe9bf88,
-        type: 2}
-      propertyPath: ShowMaxPlayers
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114412281851040704, guid: ce140f35757ba6242a9579acafe9bf88,
-        type: 2}
-      propertyPath: HeaderLabel
-      value: TOP 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: ce140f35757ba6242a9579acafe9bf88, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1183500328
 GameObject:
   m_ObjectHideFlags: 0
