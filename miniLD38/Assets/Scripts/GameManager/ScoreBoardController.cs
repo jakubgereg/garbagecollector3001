@@ -29,8 +29,9 @@ public class ScoreBoardController : MonoBehaviour
         else
         {
             Debug.LogWarning("Data sending failed, no nickname of score provided!");
+            StartCoroutine(LeaderBoard.GetLeaderBoard(LeaderBoardCallback));
         }
-        StartCoroutine(LeaderBoard.GetLeaderBoard(LeaderBoardCallback));
+
     }
 
     private void SetScoreCallback(string exception)
@@ -38,6 +39,7 @@ public class ScoreBoardController : MonoBehaviour
         if (exception != null)
         {
             print("SetScore= " + exception);
+            StartCoroutine(LeaderBoard.GetLeaderBoard(LeaderBoardCallback));
         }
     }
 
