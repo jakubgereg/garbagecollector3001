@@ -21,7 +21,7 @@ public class ScoreBoardController : MonoBehaviour
         LeaderBoard.SetApiKey(ApiKey);
         _textMesh = GetComponent<TextMesh>();
 
-        StartCoroutine(LeaderBoard.SetScore("pan", 1, SetScoreCallback));
+        //StartCoroutine(LeaderBoard.SetScore("pan", 1, SetScoreCallback));
         StartCoroutine(LeaderBoard.GetLeaderBoard(LeaderBoardCallback));
     }
 
@@ -41,8 +41,9 @@ public class ScoreBoardController : MonoBehaviour
         }
 
         string result = string.Empty;
-        result += HeaderLabel + "\n\n";
-        int i = 0;
+        if (HeaderLabel != string.Empty)
+            result += HeaderLabel + "\n\n";
+        int i = 1;
 
 
         if (obj != null)
@@ -52,12 +53,12 @@ public class ScoreBoardController : MonoBehaviour
 
             foreach (var pl in obj)
             {
-                if (i >= ShowMaxPlayers) break;
+                if (i > ShowMaxPlayers) break;
 
                 if (string.IsNullOrEmpty(pl.name))
                     pl.name = "Unknown";
 
-                result += pl.name + Delimiter + pl.score + PointSuffix + "\n";
+                result += i + ". " + pl.name + Delimiter + pl.score + PointSuffix + "\n";
                 i++;
             }
         }
