@@ -18,6 +18,11 @@ public class LivesController : MonoBehaviour {
         {
             callGameOver();
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
 	}
 
     public void getHit()
