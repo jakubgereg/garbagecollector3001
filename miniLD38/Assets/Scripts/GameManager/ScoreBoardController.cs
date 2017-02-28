@@ -21,7 +21,15 @@ public class ScoreBoardController : MonoBehaviour
         LeaderBoard.SetApiKey(ApiKey);
         _textMesh = GetComponent<TextMesh>();
 
-        //StartCoroutine(LeaderBoard.SetScore("pan", 1, SetScoreCallback));
+        if (DataContainer.score > 0 && DataContainer.nickName != string.Empty)
+        {
+            print(string.Format("Sending request to server with {0},{1}", DataContainer.nickName, DataContainer.score));
+            StartCoroutine(LeaderBoard.SetScore(DataContainer.nickName, DataContainer.score, SetScoreCallback));
+        }
+        else
+        {
+            Debug.LogWarning("Data sending failed, no nickname of score provided!");
+        }
         StartCoroutine(LeaderBoard.GetLeaderBoard(LeaderBoardCallback));
     }
 
