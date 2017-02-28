@@ -105,8 +105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a5a57186be9c042909793eaf03336a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ApiKey: StrongWhiteFrog
+  ApiKey: NiceBrightMonkey
   ShowMaxPlayers: 10
+  ReverseOrder: 0
+  SortByScore: 1
   HeaderLabel: Score Board
   Delimiter: ': '
   PointSuffix: ' points'
