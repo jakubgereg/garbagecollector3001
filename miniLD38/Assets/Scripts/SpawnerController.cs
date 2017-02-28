@@ -2,9 +2,8 @@
 
 public class SpawnerController : MonoBehaviour
 {
-
-    public GameObject ObjectToSpawn;
-    public Color Colors;
+    public float SpawnSpeed = 0.9f;
+    public GameObject[] ObjectToSpawn;
 
     private Bounds spawnRange;
     // Use this for initialization
@@ -18,12 +17,13 @@ public class SpawnerController : MonoBehaviour
         //if (Colors.Length <= 0)
         //    Debug.LogError("You have to set colorset!");
 
-        InvokeRepeating("Spawn", 1f, 1f);
+        InvokeRepeating("Spawn", 1f, SpawnSpeed);
     }
 
     // Update is called once per frame
     void Update()
     {
+
         //SetRandomSetting(ObjectToSpawn);
     }
 
@@ -36,8 +36,10 @@ public class SpawnerController : MonoBehaviour
 
         var rotation = (float)Random.Range(0, 360);
 
+        var rand = Random.Range(0, ObjectToSpawn.Length);
         //SetRandomSetting(ObjectToSpawn);
-        Instantiate(ObjectToSpawn, newpos, Quaternion.Euler(0, 0, rotation));
+        var go = (GameObject)Instantiate(ObjectToSpawn[rand], newpos, Quaternion.Euler(0, 0, rotation));
+
     }
 
 }
