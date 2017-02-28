@@ -1,21 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public enum ColorType
 {
-    green, pink
+    red, brown
 }
 
-public class BoxType : MonoBehaviour {
+public class BoxType : MonoBehaviour
+{
 
     public ColorType type;
 
-    void Start () {
-		
-	}
-	
-	void Update () {
-		
-	}
+    void Start()
+    {
+
+    }
+
+    void Update()
+    {
+
+    }
 }
