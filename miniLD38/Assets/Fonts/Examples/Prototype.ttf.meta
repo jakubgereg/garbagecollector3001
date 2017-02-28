@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 58a532915d04dc44b81c6edea1082fa4
-timeCreated: 1488277485
+guid: f625bc036456ad345a6ac6a335900dbe
+timeCreated: 1488277950
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
@@ -9,11 +9,10 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Mechanization
+  fontName: Prototype
   fontNames:
-  - Mechanization
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: 1436d2e7e5724e24aaba0aa8c97669a4, type: 3}
+  - Prototype
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
