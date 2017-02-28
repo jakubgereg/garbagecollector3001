@@ -29,6 +29,12 @@ public class LivesController : MonoBehaviour {
     {
         ScoreController sc = GetComponent<ScoreController>();
         DataContainer.score = sc.ActualScore;
+        Invoke("gameOver", 0.5f);
+        
+    }
+
+    void gameOver()
+    {
         SceneManager.LoadScene(gameOverSceneName);
     }
 }
