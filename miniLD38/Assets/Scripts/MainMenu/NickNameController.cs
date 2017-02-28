@@ -18,15 +18,16 @@ public class NickNameController : MonoBehaviour {
 
         if(nickLength == 2)
         {
-            nick = firstNickPart[Random.Range(0, firstNickPart.Count)] +
+            nick = firstNickPart[Random.Range(0, firstNickPart.Count)] + 
+                " "+
                 thirdNickPart[Random.Range(0, thirdNickPart.Count)];
             DataContainer.nickName = nick;
         }
 
         if(nickLength == 3)
         {
-            nick = firstNickPart[Random.Range(0, firstNickPart.Count)] +
-                secondNickPart[Random.Range(0, secondNickPart.Count)] +
+            nick = firstNickPart[Random.Range(0, firstNickPart.Count)] + " "+
+                secondNickPart[Random.Range(0, secondNickPart.Count)] + " "+
                  thirdNickPart[Random.Range(0, thirdNickPart.Count)];
             DataContainer.nickName = nick;
         }
